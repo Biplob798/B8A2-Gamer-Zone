@@ -56,7 +56,7 @@ nav li a{
     font-weight: 600;
     text-transform: uppercase;
 }
-.banner-linear{
+.primary-linear{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
      background-clip: text;
      -webkit-background-clip: text;
@@ -97,4 +97,47 @@ nav li a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+/* videos container start*/
+.videos-container{
+    text-align: center;
+    margin: 40px auto;
+}
+.videos-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 30px;
+}
+.videos-title{
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: 800px;
+  
+}
+.videos-description {
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400; 
+}
+.videos-img-title{
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400; 
+}
+
+.primary-linear-1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     color: #0B0223;
+     font-family: Work Sans;
+     font-size: 3rem;
+     font-weight: 800px;
+   
 }
