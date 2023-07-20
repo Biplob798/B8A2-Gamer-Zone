@@ -268,14 +268,15 @@ border-radius: 20px;
 }
 /* hover effect*/
 
-.social-icons a:hover{
+ .social-icons a:hover{
     background-color: #111;
-    transition: 0.5s;
-   }
+    transition: 0.5s; 
+}
    .social-icons a:hover{
-       color: white;
-       transition: .5s;
-   }
+     color: white;
+    transition: .5s;  
+
+}
 
    /* media query for mobile device */
 
@@ -310,6 +311,9 @@ border-radius: 20px;
     }
     .primary-linear{
         font-size: 3rem;
+    }
+    .banner-img{
+        max-width: 100vh;
     }
     /* online-video-section */
     .videos-img
