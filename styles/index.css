@@ -19,7 +19,9 @@ nav{
 }
 nav > ul {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    margin-right: -70px;
 }
 nav li{
     list-style: none;
@@ -31,12 +33,12 @@ nav li a{
     font-weight: 400;
 }
 .logo-title{
+    margin-left: -80px;
     gap: 20px;
     font-size: 3rem;
     font-weight: bolder;
-    font-family: Work Sans;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .linear-primary{
@@ -53,17 +55,15 @@ nav li a{
 }
 /* banner styles*/
 .banner{
-    margin: 0 auto;
-    width: 1440px;
-    background: #FFF;
+    background-image: url(../images/Group\ 14.png);
+    padding: 0 auto;
+    margin: 20px;
 }
-
-.banner-title{
+ .banner-title{
     color: #0B0223;
-    font-family: Work Sans;
     font-size: 48px;
     font-weight: 600;
-    text-transform: uppercase;
+
 }
 .primary-linear{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -71,14 +71,11 @@ nav li a{
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
      color: #0B0223;
-     font-family: Work Sans;
      font-size: 98px;
      font-weight: 800px;
-     text-transform: uppercase;
 }
 .banner-description{
    color: #534C64;
-   font-family: Work Sans;
    font-size: 20px;
    font-weight: 500;
 }
@@ -86,14 +83,12 @@ nav li a{
     color: #FFF;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-    font-family: Work Sans;
     font-size: 16px;
     font-weight: 600;
     padding: 8px 10px;
     border: none;
 }
 .btn-primary-2{
-    font-family: Work Sans;
     font-size: 16px;
     font-weight: 600;
     border-radius: 48px;
@@ -107,22 +102,19 @@ nav li a{
     justify-content: space-evenly;
     align-items: center;
 }
-/* videos container start*/
-.videos-container{
-    text-align: center;
-    margin: 40px auto;
+/*online videos container start*/
+
+.videos-content{
+ text-align: center;
 }
 .videos-img{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 30px;
     gap: 20px;
-
-
 }
 .videos-title{
     color: #0B0223;
-    font-family: Work Sans;
     font-size: 3rem;
     font-weight: 800px;
   
@@ -130,18 +122,15 @@ nav li a{
 .videos-description {
     color: #534C64;
     text-align: center;
-    font-family: Work Sans;
     font-size: 1rem;
     font-weight: 400; 
 }
 .videos-img-title{
     color: #534C64;
     text-align: center;
-    font-family: Work Sans;
     font-size: 1rem;
     font-weight: 400;
 }
-
 .primary-linear-1{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
      background-clip: text;
@@ -154,13 +143,12 @@ nav li a{
    
 }
 /* offline-game styles */
-.offline-game{
-    min-height: 540px;
+.offline-game-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 45px;
-    margin-top: 40px;
+    padding-left: 240px;
+    padding-right: 240px;
 }
 .offline-game-content{
    margin-bottom: 270px;
@@ -172,7 +160,6 @@ nav li a{
    font-size: 3rem;
    font-weight: 700px;
    color: #0B0223;
-   line-height: 60px;
 }
 .offline-game-description{
     color: #534C64;
@@ -182,14 +169,11 @@ nav li a{
     line-height: 30px;
     margin-top: 20px;
 }
-.offline-game-img-1{
-   width: 100%;
-    position: absolute;
+.offline-game{
+    margin-top: 20px;
+    margin-bottom: -240px;
 }
-
 .offline-game-img-2{
-    border-radius: 8px;
-    color: white;
     width: 320px;
     padding: 40px;
     text-align: center;
@@ -197,6 +181,33 @@ nav li a{
     bottom: 290px;
     right: 200px;
     
+}
+/* cards-section styles */
+.cards{
+    margin-bottom: 30px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.card p:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+.card:hover{
+    color: #FF42A5;
+    border:1px solid #FF42A5 ;
 }
 /*footer styles*/
 
@@ -231,16 +242,6 @@ background-color: white;
 margin: 10px;
 border-radius: 50%;
 }
-/* hover effect*/
-
-.social-icons a:hover{
- background-color: #111;
- transition: 0.5s;
-}
-.social-icons a:hover{
-    color: white;
-    transition: .5s;
-}
 .footer-nav{
     margin: 30px 0;
 }
@@ -264,3 +265,13 @@ border-radius: 50%;
 .footer-nav li{
     list-style: none;
 }
+/* hover effect*/
+
+.social-icons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+   }
+   .social-icons a:hover{
+       color: white;
+       transition: .5s;
+   }
